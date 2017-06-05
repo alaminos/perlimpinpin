@@ -1,0 +1,249 @@
+html,body { height: 100%; margin: 0px; padding: 0px; }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    
+    font-family: "Open Sans", Tahoma, sans-serif;
+    font-size: 6vw;
+}
+
+
+#heading {
+    background-color: rebeccapurple;
+    color: whitesmoke;
+
+    min-width: 100vw;
+    min-height: 100vh;
+    padding: 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#product {
+    margin: 0;
+    background-color: coral;
+    color: lightgoldenrodyellow ;
+
+    min-width: 100vw;
+    min-height: 100vh;
+    padding: 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background-image: url(pinpinpow1.svg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.features {
+    margin: 10%;
+}
+
+/*.features:last-of-type {
+    padding: 5%;
+    background-color: rgba(237, 207, 232, 0.6)  
+}*/
+
+
+#theySay {
+    margin: 0;
+    background-color: palevioletred;
+    color: azure;
+
+    min-width: 100vw;
+    min-height: 100vh;
+    padding: 5%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.userReview {
+   
+    max-width: 70vw;
+}
+
+.userReview:nth-child(odd) {
+    float: left;
+    text-align: left;
+}
+
+.userReview:nth-child(even) {
+    float: right;
+    text-align: right;
+}
+
+
+.userReview {
+    margin: 5%;
+    font-style: italic;
+}
+
+
+#orderNow {
+    font-size: 10vw;
+    color: whitesmoke;
+    text-shadow: 2px 2px 8px #FF0000;
+
+
+    margin: 0;
+    padding: 10%;
+    background-color: black;
+    
+
+    min-width: 100vw;
+    min-height: 100vh;
+    
+
+    background-image: url(MaskMobile.png), url(fire.jpg);  /*añadir 2do bkgd animado*/
+    background-repeat: no-repeat;
+    background-attachment: fixed, scroll;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.orderCall {
+    margin: 0 auto;
+    padding: 12% 0;
+    max-width: 30vw;
+    text-align: center;
+}
+
+
+
+
+#faq {
+    margin: 0;
+    background: linear-gradient(to bottom, #000000 0%,#45484d 100%);
+    color: lightgrey;
+
+    min-width: 100vw;
+    min-height: 100vh;
+    padding: 5%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+#faq .title {
+    width: 100vw;
+    text-align: center;
+    color: white;
+    /*text-shadow: 2px 2px 8px #FF0000;*/
+    background: url(metalpattern.jpg);
+    background-repeat: repeat;
+}
+
+
+#notabene {
+    font-size: 0.5em;
+    font-weight: 100;
+}
+
+.qna {
+    margin: 5%;
+}
+
+.footer {
+    padding: 2%;
+    color: white;
+    background: url(metalpattern.jpg);
+    background-repeat: repeat;
+    text-align: right;
+}
+
+
+
+@media (min-width: 500px) {
+    body {
+        font-size: 4vw;
+
+    }
+    
+}
+
+@media (min-width: 1000px) {
+    body {
+        font-size: 3vw;
+
+    }
+
+    #userReviews {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .userReview {
+        font-size: 2vw;
+        max-width: 250px;
+
+    }
+
+    #questions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #questions div {
+        font-size: 2vw;
+        flex-basis: 25%;
+
+    }
+
+
+    #orderNow {
+        color: goldenrod;
+        background-color: black;
+        
+        background-image: url(MaskMobile.png), url(fire.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed, scroll;
+        /*background-position: center, ;*/
+        background-size: auto 100%, contain;
+
+    
+    }
+
+    .orderCall {
+        padding: 0;
+    }
+
+
+
+    .orderCall:nth-child(odd) {
+        
+        padding-bottom: 0%;
+        float: left;
+        text-align: left;
+        font-size: 4vw;
+        max-width: 20vw;
+    }
+
+    .orderCall:nth-child(even) {
+
+        padding-top: 30%;
+        float: right;
+        font-size: 5vw;
+        max-width: 20vw;
+        text-align: right;
+        
+    }
+    
+}
