@@ -15,8 +15,8 @@ body {
     background-color: rebeccapurple;
     color: whitesmoke;
 
-    min-width: 100vw;
     min-height: 100vh;
+    max-width: 100%;  
     padding: 5%;
 
     display: flex;
@@ -30,8 +30,8 @@ body {
     background-color: coral;
     color: lightgoldenrodyellow ;
 
-    min-width: 100vw;
     min-height: 100vh;
+    max-width: 100%;  
     padding: 5%;
 
     display: flex;
@@ -56,11 +56,9 @@ body {
     background-color: palevioletred;
     color: azure;
 
-    min-width: 100vw;
-    min-height: 100vh;   
+    min-height: 100vh;
+    max-width: 100%;
 }
-
-
 
 #theySay h2 {
     text-align: center;
@@ -68,12 +66,19 @@ body {
     padding: 8%;
 }
 
-.userReview {
-    max-width: 70vw;
-    margin: 5%;
-    font-style: italic;
-}
+#reviewsBox {
+    margin: 0 auto;
+    max-width: 90%;
+    height: auto;
+    overflow: hidden;
+    }
 
+.userReview {
+    font-style: italic;
+    max-width: 70vw;
+    margin-bottom: 5vw;
+    
+}
 
 .userReview:nth-child(odd) {
     float: left;
@@ -91,16 +96,13 @@ body {
     color: whitesmoke;
     text-shadow: 2px 2px 8px #FF0000;
 
-
     margin: 0;
     padding: 10%;
     background-color: black;
     
-
-    min-width: 100vw;
     min-height: 100vh;
+    max-width: 100%;  
     
-
     background-image: url(MaskMobile.png), url(fire.jpg);  /*añadir 2do bkgd animado*/
     background-repeat: no-repeat;
     background-attachment: fixed, scroll;
@@ -122,8 +124,9 @@ body {
     background: linear-gradient(to bottom, #000000 0%,#45484d 100%);
     color: lightgrey;
 
-    min-width: 100vw;
+    
     min-height: 100vh;
+    max-width: 100%;  
     padding: 5%;
     
     display: flex;
@@ -134,11 +137,16 @@ body {
 
 #faq .title {
     width: 100vw;
+    max-width: 100%;  
     text-align: center;
     color: white;
-    /*text-shadow: 2px 2px 8px #FF0000;*/
+    
     background: url(metalpattern.jpg);
     background-repeat: repeat;
+}
+
+#questions {
+    margin: 0 auto;
 }
 
 
@@ -173,20 +181,6 @@ body {
 @media (min-width: 900px) {
     body {
         font-size: 3vw;
-
-    }
-
-    #userReviews {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
-    .userReview {
-        margin-bottom: 10vw;
-        font-size: 2vw;
-        max-width: 250px;
 
     }
 
