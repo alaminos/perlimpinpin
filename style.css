@@ -46,13 +46,9 @@ body {
 
 
 .features {
-    margin: 10%;
+    margin-top: 15vw;
 }
 
-/*.features:last-of-type {
-    padding: 5%;
-    background-color: rgba(237, 207, 232, 0.6)  
-}*/
 
 
 #theySay {
@@ -61,19 +57,23 @@ body {
     color: azure;
 
     min-width: 100vw;
-    min-height: 100vh;
-    padding: 5%;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
+    min-height: 100vh;   
+}
+
+
+
+#theySay h2 {
+    text-align: center;
+    margin: 0;
+    padding: 8%;
 }
 
 .userReview {
-   
     max-width: 70vw;
+    margin: 5%;
+    font-style: italic;
 }
+
 
 .userReview:nth-child(odd) {
     float: left;
@@ -83,12 +83,6 @@ body {
 .userReview:nth-child(even) {
     float: right;
     text-align: right;
-}
-
-
-.userReview {
-    margin: 5%;
-    font-style: italic;
 }
 
 
@@ -123,8 +117,6 @@ body {
 }
 
 
-
-
 #faq {
     margin: 0;
     background: linear-gradient(to bottom, #000000 0%,#45484d 100%);
@@ -156,10 +148,11 @@ body {
 }
 
 .qna {
-    margin: 5%;
+    margin: 6vh;
 }
 
 .footer {
+    margin: 0 auto;
     padding: 2%;
     color: white;
     background: url(metalpattern.jpg);
@@ -177,7 +170,7 @@ body {
     
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
     body {
         font-size: 3vw;
 
@@ -191,6 +184,7 @@ body {
     }
 
     .userReview {
+        margin-bottom: 10vw;
         font-size: 2vw;
         max-width: 250px;
 
@@ -198,11 +192,13 @@ body {
 
     #questions {
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
     }
+
     #questions div {
-        font-size: 2vw;
+        font-size: 2.5vw;
         flex-basis: 25%;
 
     }
@@ -215,7 +211,6 @@ body {
         background-image: url(MaskMobile.png), url(fire.jpg);
         background-repeat: no-repeat;
         background-attachment: fixed, scroll;
-        /*background-position: center, ;*/
         background-size: auto 100%, contain;
 
     
@@ -245,5 +240,14 @@ body {
         text-align: right;
         
     }
+
+    .qna {
+
+        font-size: 2.5vw;
+        flex-basis: 25%;
+        max-width: 300px;
+
+    }
+
     
 }
